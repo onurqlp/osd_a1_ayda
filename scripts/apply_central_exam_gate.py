@@ -2,7 +2,7 @@
 """Apply existing approved AYDA central classroom gate to every HTML exam page."""
 import pathlib,re
 root=pathlib.Path(__file__).resolve().parents[1]
-ref=(root/"index.html").read_text(encoding="utf-8")
+ref=(root/"lesen.html").read_text(encoding="utf-8")
 def part(a,b):
  start=ref.find(a)
  if start<0:raise RuntimeError("missing gate reference "+a)
